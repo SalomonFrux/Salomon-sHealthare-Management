@@ -1,0 +1,154 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="DBProject.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+
+    
+    <!--------------------------------- Styling -------------------------------->
+
+    <!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'/>
+	
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/Update/bootstrap-4/css/bootstrap.min.css" />
+    <!-- Patient Style -->
+    <link rel="stylesheet" href="/assets/css/patient-style.css"/>
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+
+    <!------------------------------------Styling for Footer-------------------------------------->
+    <meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="keywords" content="footer, address, phone, icons" />
+
+	<link rel="stylesheet" href="/assets/css/demo.css"/>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.css"/>
+	<link rel="stylesheet" href="/assets/css/footer-distributed-with-address-and-phones.css"/>
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css"/>
+
+
+
+
+
+
+
+
+    <!-- Head Content Place Holder -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+
+
+
+    <title>Home</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+
+
+<body>
+    
+    
+        <div>
+
+          <%-- The Navigation content start here --%>
+           
+            <nav class="site-header sticky-top py-4" style="background-color: #d35400">
+                <div class="container d-flex flex-column flex-md-row justify-content-between text-white">
+                
+                    <a class="py-2 d-none d-md-inline-block text-white" href="AdminHome.aspx">Home</a>
+                    <a class="py-2 d-none d-md-inline-block text-white" href="AddStaff.aspx">Add Staff</a>
+                    <a class="py-2 d-none d-md-inline-block text-white" href="DoctorRegistrationForm.aspx">Add A Doctor</a>
+                    <a class="py-2 d-none d-md-inline-block text-white" href="ManageClinic.aspx">Manage The Center</a>
+                    <a class="py-2 d-none d-md-inline-block text-white" href="/SignUp.aspx">Log out</a>
+                    
+                </div>
+            </nav>
+            <%--The  Navigation content ends here --%>
+
+
+
+
+           
+         <!-- Body Content Place Holder -->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+        </div>
+
+
+
+
+
+
+        <!--- Footer starts here -->
+        <footer class="footer-distributed"  style="background-color: #d35400">
+
+            <div class="footer-left">
+
+                <h3>Salomon HealthCare Center</h3>
+
+                <p class="footer-company-name">Salomon HealthCare Center &copy; 2021</p>
+            </div>
+
+			<div class="footer-center">
+                
+               
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span> WiseStreet 1st Bld</span> Sam City, Salomon Island</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1(309) 741-4537</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@medicx4.com">support@medicx4.com</a></p>
+				</div>
+
+			</div>
+            
+            
+
+			<div class="footer-right">
+
+				<p class="footer-company-about" style="color: black">
+					<span>About the company</span>
+					Our mission is to provide quality health services to all in a comfortable and cozy environment.
+                    The clinic primarily offers consultations and is not equipped to take emergencies.
+				</p>
+
+    			<div class="footer-icons">
+
+    				<a href="#"><i class="fa fa-facebook"></i></a>
+
+    			</div>
+
+			</div>
+
+		</footer>
+
+        <!--- Footer ends here -->
+
+
+
+  
+</body>
+
+</html>
